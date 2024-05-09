@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class camerasize : MonoBehaviour
 {
-    [SerializeField] GameObject mainWindow;
-
-    void Awake()
+    [SerializeField] GameObject objects;
+    
+    void Update() //awake
     {
-        float ratio = (float)Screen.height / Screen.width;
-        float ortSize = mainWindow.GetComponent<SpriteRenderer>().size[0] * 100 * ratio / 200f;
-        Camera.main.orthographicSize = ortSize;
+        // float ratio = (float)Screen.height / Screen.width;
+
+        // float ortSize = objects.GetComponent<SpriteRenderer>().size[0] * 100 * ratio / 200f;
+        // Camera.main.orthographicSize = ortSize;
+       
     }
 }

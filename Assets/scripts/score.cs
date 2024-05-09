@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+//using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class score : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI scoreText;
+    //[SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] float speedScorePoints;
     float scorePoints = 0;
     int fullScore;
@@ -18,7 +18,7 @@ public class score : MonoBehaviour
     {
         if (scorePoints < fullScore)
             scorePoints += Time.deltaTime * speedScorePoints;
-        scoreText.text = "Î×ÊÈ: " + scorePoints.ToString();
+        //scoreText.text = "ï¿½ï¿½ï¿½ï¿½: " + scorePoints.ToString();
     }
 
     public void back()
